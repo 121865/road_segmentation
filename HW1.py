@@ -54,7 +54,7 @@ for i in range(mask.shape[0]):
 overlay = image.copy()
 alpha = 0.5
 for segment in segments:
-    color = [0, 255, 0]  # 綠色
+    color = [0, 0, 255]  # 紅色
     for x, y in segment:
         overlay[x, y] = color
 cv2.addWeighted(overlay, alpha, image, 1 - alpha, 0, image)
