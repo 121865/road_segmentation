@@ -44,6 +44,7 @@ for x in range(filtered_mask.shape[0]):
 output = cv2.addWeighted(overlay, alpha, image, 1 - alpha, 0)
 ```
 # 五、成果
+影片連結 : <https://youtu.be/3txH2h8slcw>  
 ![image](https://github.com/user-attachments/assets/87b4c008-bce0-4ce8-b095-be56a900e204)
 ![image](https://github.com/user-attachments/assets/2f64efe3-308e-416f-9be5-e0467c668380)
 ![image](https://github.com/user-attachments/assets/98d5ef98-e6a3-4082-a721-205ea3885af5)
