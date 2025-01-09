@@ -50,6 +50,8 @@ output = cv2.addWeighted(overlay, alpha, image, 1 - alpha, 0)
 ![image](https://github.com/user-attachments/assets/b4ffc7ab-0fc9-4851-b5cb-73b8af969bef)
 # 六、參考資料
 [二值化黑白影像](https://github.com/user-attachments/assets/f4601854-ad09-4cfd-8ac0-575a8ca5301b)
+[二值化黑白影像](<https://github.com/user-attachments/assets/f4601854-ad09-4cfd-8ac0-575a8ca5301b>)
+![image](https://github.com/user-attachments/assets/c9ae0dda-602c-40fe-833f-0024e3238ca4)
 
 
 
