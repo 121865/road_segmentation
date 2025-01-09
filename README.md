@@ -11,5 +11,14 @@ output : 區域塗上半透明
 ```
 equalized_gray = cv2.equalizeHist(gray_image)
 ```
+### LBP
+```
+def compute_lbp(image, mask, P=8, R=2):
+    lbp = local_binary_pattern(image, P, R, method='uniform')
+    lbp = lbp * (mask // 255)  # 只保留道路區域的 LBP 值
+    return lbp
+```
+原本設定P=16，R=2，但部分圖像顯示結果並不理想，所以更改為P=8，R=2  
+![road_final](https://github.com/user-attachments/assets/7511b834-4143-40e5-b7bb-56bd17b88b1c)
 
 
