@@ -49,10 +49,11 @@ output = cv2.addWeighted(overlay, alpha, image, 1 - alpha, 0)
 ![image](https://github.com/user-attachments/assets/98d5ef98-e6a3-4082-a721-205ea3885af5)
 ![image](https://github.com/user-attachments/assets/b4ffc7ab-0fc9-4851-b5cb-73b8af969bef)
 # 六、參考資料
-[二值化黑白影像](https://github.com/user-attachments/assets/f4601854-ad09-4cfd-8ac0-575a8ca5301b)
-[二值化黑白影像](<https://github.com/user-attachments/assets/f4601854-ad09-4cfd-8ac0-575a8ca5301b>)
-![image](https://github.com/user-attachments/assets/c9ae0dda-602c-40fe-833f-0024e3238ca4)
-
+<https://steam.oxxostudio.tw/category/python/ai/opencv-threshold.html>
+<https://ithelp.ithome.com.tw/articles/10269771?sc=rss.iron>
+<https://vocus.cc/article/66feaaeafd897800013da017>
+<https://ithelp.ithome.com.tw/articles/10323537?sc=rss.iron>
+<https://ithelp.ithome.com.tw/m/articles/10323301>
 
 
 
