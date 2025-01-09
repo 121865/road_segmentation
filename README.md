@@ -6,7 +6,12 @@ output : 區域塗上半透明
 ![image](https://github.com/user-attachments/assets/eddebc54-9633-41e5-abc7-1f797425bb6c)
 # 三、流程圖
 ![image](https://github.com/user-attachments/assets/0d24253e-caf2-48a9-9230-1ce0b4458e6f)
-# 四、程式說明
+# 四、API
+![image](https://github.com/user-attachments/assets/0e78b717-e80f-4d07-baea-f869d3c62ebf)  
+![image](https://github.com/user-attachments/assets/6d525b3a-937a-41f8-bb0d-54efdbee7826)  
+![image](https://github.com/user-attachments/assets/9974a917-1d3e-47c4-ae47-1af289c92eb9)  
+![image](https://github.com/user-attachments/assets/e1a99567-9a8d-42bc-8b8d-8545a2649cfe)
+# 五、程式說明
 ### 直方圖均衡化
 ```
 equalized_gray = cv2.equalizeHist(gray_image)
@@ -43,13 +48,13 @@ for x in range(filtered_mask.shape[0]):
             overlay[x, y] = [0, 0, 255]  # 紅色
 output = cv2.addWeighted(overlay, alpha, image, 1 - alpha, 0)
 ```
-# 五、成果
+# 六、成果
 影片連結 : <https://youtu.be/3txH2h8slcw>  
 ![image](https://github.com/user-attachments/assets/87b4c008-bce0-4ce8-b095-be56a900e204)
 ![image](https://github.com/user-attachments/assets/2f64efe3-308e-416f-9be5-e0467c668380)
 ![image](https://github.com/user-attachments/assets/98d5ef98-e6a3-4082-a721-205ea3885af5)
 ![image](https://github.com/user-attachments/assets/b4ffc7ab-0fc9-4851-b5cb-73b8af969bef)
-# 六、參考資料
+# 七、參考資料
 <https://steam.oxxostudio.tw/category/python/ai/opencv-threshold.html>  
 <https://ithelp.ithome.com.tw/articles/10269771?sc=rss.iron>  
 <https://vocus.cc/article/66feaaeafd897800013da017>  
