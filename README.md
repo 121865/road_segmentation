@@ -19,6 +19,7 @@ def compute_lbp(image, mask, P=8, R=2):
     return lbp
 ```
 原本設定P=16，R=2，但部分圖像顯示結果並不理想，所以更改為P=8，R=2  
-![road_final](https://github.com/user-attachments/assets/7511b834-4143-40e5-b7bb-56bd17b88b1c)
+![road_final](https://github.com/user-attachments/assets/655dc894-a46e-4db6-af5b-13dfd43daaba)
+
 
 
