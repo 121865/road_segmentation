@@ -20,7 +20,7 @@ def compute_lbp(image, mask, P=8, R=2):
 ```
 P=16，R=2  
 ![road_final](https://github.com/user-attachments/assets/655dc894-a46e-4db6-af5b-13dfd43daaba)  
-P=8，R=2
+P=8，R=2  
 ![road_final_2](https://github.com/user-attachments/assets/5755dee6-030b-4ef9-a4e0-6af0ef0e8a16)  
 ### 找最大區域
 在實作時發現圖片經HSV設定完馬路範圍與LBP處理後儘管不是只有馬路區域變成白色區域，但馬路範圍通常都是最大區域，所以取最大區域當作馬路。
