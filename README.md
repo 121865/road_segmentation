@@ -7,10 +7,11 @@ output : 區域塗上半透明
 # 三、流程圖
 ![image](https://github.com/user-attachments/assets/0d24253e-caf2-48a9-9230-1ce0b4458e6f)
 # 四、API
-![image](https://github.com/user-attachments/assets/0e78b717-e80f-4d07-baea-f869d3c62ebf)  
-![image](https://github.com/user-attachments/assets/6d525b3a-937a-41f8-bb0d-54efdbee7826)  
-![image](https://github.com/user-attachments/assets/9974a917-1d3e-47c4-ae47-1af289c92eb9)  
-![image](https://github.com/user-attachments/assets/e1a99567-9a8d-42bc-8b8d-8545a2649cfe)
+![image](https://github.com/user-attachments/assets/8e6a9518-fb26-4617-b065-2f0c16a9717f)  
+![image](https://github.com/user-attachments/assets/9421e76e-1a51-4fa0-a7fc-f5616c010ec1)  
+![image](https://github.com/user-attachments/assets/e2985f54-a196-46b5-a22f-2aa3805b6297)  
+![image](https://github.com/user-attachments/assets/7813e181-9b3a-4c1c-ad27-62509c93f2c4)
+
 # 五、程式說明
 ### 直方圖均衡化
 ```
