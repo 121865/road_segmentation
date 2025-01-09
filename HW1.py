@@ -12,6 +12,8 @@ if image is None:
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
+
+
 # 直方圖均衡化（Gray Image）
 equalized_gray = cv2.equalizeHist(gray_image)
 
@@ -26,6 +28,7 @@ lower_gray = np.array([0, 0, 20])
 upper_gray = np.array([180, 45, 200])
 road_mask = cv2.inRange(hsv_image, lower_gray, upper_gray)
 
+
 # 計算 LBP 並僅保留道路區域
 def compute_lbp(image, mask, P=8, R=2):
     lbp = local_binary_pattern(image, P, R, method='uniform')
@@ -39,9 +42,16 @@ _, mask = cv2.threshold(lbp_image.astype(np.uint8), 0, 255, cv2.THRESH_BINARY + 
 
 # 尋找輪廓並保留最大區塊
 contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+contour_image = image.copy()
+cv2.drawContours(contour_image, contours, -1, (0, 255, 0), 2)
+cv2.imshow('Contours Detected', contour_image)
 
 # 找到最大輪廓
 max_contour = max(contours, key=cv2.contourArea)
+max_contour_image = image.copy()
+cv2.drawContours(max_contour_image, [max_contour], -1, (0, 0, 255), 2)
+cv2.imshow('Max Contour', max_contour_image)
+
 
 # 創建一個空白遮罩來保存最大區塊
 filtered_mask = np.zeros_like(mask)
@@ -87,4 +97,5 @@ cv2.destroyAllWindows()
 # 儲存結果
 output_path = r"E:\pic_final\road_final.jpg"
 cv2.imwrite(output_path, output)
+
 
